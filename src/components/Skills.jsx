@@ -8,27 +8,32 @@ const skillsData = [
   {
     id: 1,
     category: 'Languages',
-    skills: ['Python', 'JavaScript', 'PHP'],
+    skills: ['Python', 'JavaScript', 'PHP', 'SQL', 'HTML5', 'CSS3'],
   },
   {
     id: 2,
     category: 'Frameworks & Backend',
-    skills: ['Django', 'Flask', 'Node.js'],
+    skills: ['Django', 'Flask', 'Node.js', 'REST APIs'],
   },
   {
     id: 3,
     category: 'AI & Data',
-    skills: ['Machine Learning', 'OpenCV', 'Pandas', 'NumPy'],
+    skills: ['PyTorch', 'Scikit-learn', 'OpenCV', 'YOLO', 'RAG', 'LLM Fine-Tuning', 'Pandas', 'NumPy'],
   },
   {
     id: 4,
-    category: 'Database',
-    skills: ['MySQL', 'SQL'],
+    category: 'Cloud & DevOps',
+    skills: ['AWS', 'Git', 'GitHub', 'Linux', 'Heroku'],
   },
   {
     id: 5,
+    category: 'Database',
+    skills: ['MySQL', 'JSON'],
+  },
+  {
+    id: 6,
     category: 'Concepts',
-    skills: ['System Design', 'Cybersecurity', 'IoT'],
+    skills: ['System Design', 'Cybersecurity', 'IoT', 'Computer Vision', 'Data Structures & Algorithms'],
   },
 ];
 

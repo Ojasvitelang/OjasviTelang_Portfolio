@@ -38,6 +38,13 @@ function Hero() {
               to city-scale automation and AI-driven platforms.
             </p>
 
+            {/* Recognition Strip */}
+            <div className="hero-recognition">
+              <span>Published in <strong>IJIRSET</strong> (ICETPR 2026)</span>
+              <span className="hero-recognition-divider">•</span>
+              <span>In collaboration with <strong>Kalyan-Dombivli Municipal Corporation</strong></span>
+            </div>
+
             {/* CTA Buttons */}
             <div className="hero-actions">
               <a href="#projects" className="btn btn-primary">
@@ -45,6 +52,9 @@ function Hero() {
               </a>
               <a href="#contact" className="btn btn-secondary">
                 <span>Get in Touch</span>
+              </a>
+              <a href="/resume.pdf" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <span>Download Resume</span>
               </a>
             </div>
           </div>

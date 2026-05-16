@@ -403,6 +403,24 @@ a:hover {
   opacity: 1;
 }
 
+/* Navbar GitHub Icon */
+.navbar-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px !important;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.navbar-github:hover {
+  color: var(--color-accent-cyan);
+}
+
+.navbar-github::before {
+  display: none !important;
+}
+
 /* Mobile Menu Toggle */
 .navbar-toggle {
   display: none;
@@ -573,6 +591,27 @@ a:hover {
   max-width: 500px;
 }
 
+/* Hero Recognition Strip */
+.hero-recognition {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.hero-recognition strong {
+  color: var(--color-accent-cyan);
+  font-weight: 600;
+}
+
+.hero-recognition-divider {
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
 /* Hero Actions */
 .hero-actions {
   display: flex;
@@ -714,17 +753,24 @@ a:hover {
   opacity: 0.5;
 }
 
-/* Project Details */
-.project-role {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+/* Project Context Tags */
+.project-context-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 12px;
-  background: linear-gradient(90deg, var(--color-accent-cyan), var(--color-accent-pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+}
+
+.project-context-tags span {
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-secondary);
+  font-size: 0.72rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .project-title {
@@ -1106,12 +1152,45 @@ a:hover {
   opacity: 1;
 }
 
+.mindset-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
 .mindset-title {
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--color-text-primary);
-  margin-bottom: 10px;
+  margin-bottom: 0;
   transition: all var(--transition-normal);
+}
+
+.mindset-card:not(:has(.mindset-header)) .mindset-title {
+  margin-bottom: 10px;
+}
+
+.mindset-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent-cyan);
+  transition: all var(--transition-normal);
+  flex-shrink: 0;
+}
+
+.mindset-link:hover {
+  background: rgba(0, 240, 255, 0.15);
+  border-color: var(--color-accent-cyan);
+  box-shadow: 0 0 15px var(--glow-cyan);
+  transform: translateY(-2px);
 }
 
 .mindset-card:hover .mindset-title {

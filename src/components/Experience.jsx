@@ -12,16 +12,16 @@ const experienceData = [
     company: 'Redefine Reach',
     companyUrl: 'https://redefinereach.pro/',
     description:
-      'Built company website, developed internal AI tools, and worked on backend systems and data pipelines.',
+      "Designed and shipped the company's official website. Built data analytics pipelines (Python, Pandas) for sales decisions. Architecting an in-house AI assistant using RAG and fine-tuning of open-source foundation models to automate workflows and enhance client interactions.",
   },
   {
     id: 2,
     date: 'Research Project',
-    title: 'Research Intern',
+    title: 'Research Collaborator',
     company: 'Smart Traffic Automation Project (IIIR Center)',
     companyUrl: null,
     description:
-      'Led system architecture and design for a city-scale traffic automation solution.',
+      'Designed system architecture for a city-scale adaptive traffic automation solution using computer vision and IoT-based signaling, in collaboration with Kalyan-Dombivli Municipal Corporation.',
   },
 ];
 

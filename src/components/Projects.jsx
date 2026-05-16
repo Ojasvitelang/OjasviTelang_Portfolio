@@ -14,37 +14,37 @@ const projectsData = [
   {
     id: 1,
     title: 'Enterprise-Grade Threat Detection System',
-    role: 'Sole designer and developer',
+    contextTags: ['Independent Project', 'Published Research'],
     description:
       'Built an integrated cybersecurity system combining honeypot, intrusion detection system (IDS), and firewall-based defense layers to detect and monitor malicious activity in real time. Designed a live dashboard displaying attack feeds, IP tracking, and command execution logs. Created as a deployable blueprint for real-world enterprise security environments.',
-    tech: ['Python', 'Networking', 'Cybersecurity', 'Backend Systems'],
+    tech: ['Python', 'PyTorch', 'Scikit-learn', 'Suricata IDS', 'AWS', 'Cybersecurity'],
     image: cyberImg,
   },
   {
     id: 2,
     title: 'AI-Based Smart Traffic Automation System',
-    role: 'Lead architect and system engineer',
+    contextTags: ['Civic Tech Collaboration', 'KDMC Partnership'],
     description:
-      'Designed a dynamic traffic control system using computer vision and adaptive signal timing to optimize lane-wise traffic flow. Implemented fairness logic to prevent low-traffic lanes from excessive waiting. Reduced infrastructure cost by 4× by replacing multiple cameras with a single rotating camera architecture. Built as a scalable model for smart city deployment.',
-    tech: ['Python', 'OpenCV', 'System Design', 'IoT'],
+      'Designed a dynamic traffic control system using computer vision and adaptive signal timing to optimize lane-wise traffic flow. Implemented fairness logic to prevent low-traffic lanes from excessive waiting. Designed a single rotating-camera architecture as a cost-efficient alternative to multi-camera setups, reducing required hardware per intersection. Built as a scalable model for smart city deployment.',
+    tech: ['Python', 'OpenCV', 'YOLO', 'Computer Vision', 'IoT', 'System Design'],
     image: trafficImg,
   },
   {
     id: 3,
     title: 'AI-Powered Internal Automation System',
-    role: 'Sole designer and developer',
+    contextTags: ['Client Project — Redefine Reach'],
     description:
       "Built an internal AI-powered system to automate workflows and assist digital marketing operations. Developed backend logic and intelligent automation features to improve team productivity. Also designed and built the company's website to enhance brand credibility and improve client perception.",
-    tech: ['Python', 'Web Development', 'AI Systems'],
+    tech: ['Python', 'RAG', 'LLM Fine-Tuning', 'Django', 'Backend Systems'],
     image: llmImg,
   },
   {
     id: 4,
     title: 'Referral & Incentive Management Platform',
-    role: 'Sole designer and developer',
+    contextTags: ['Commercial Client Project'],
     description:
       'Developed a commercial referral tracking platform for a cosmetology company to manage student-driven admissions, reward allocation, and membership tiers. Implemented logic for referral validation, duplicate prevention, points tracking, and tier classification (Bronze/Silver/Gold). Built as a scalable and reliable business system.',
-    tech: ['Django', 'MySQL', 'Backend Development'],
+    tech: ['Django', 'Python', 'MySQL', 'Backend Systems'],
     image: referralImg,
   },
 ];
@@ -66,7 +66,11 @@ function ProjectCard({ project }) {
       </div>
 
       {/* Project Details */}
-      <span className="project-role">{project.role}</span>
+      <div className="project-context-tags">
+        {project.contextTags.map((tag, index) => (
+          <span key={index}>{tag}</span>
+        ))}
+      </div>
       <h3 className="project-title">{project.title}</h3>
       <p className="project-description">{project.description}</p>
 
